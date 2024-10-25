@@ -12,24 +12,13 @@
         android:id="@+id/app_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HEMA APP"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
         android:textSize="50sp"
         android:textColor="#FFFFFF"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="70dp"
         android:textStyle="bold"
         android:gravity="center"/>
-
-    <!-- Subtítulo -->
-    <TextView
-        android:id="@+id/registrate_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Regístrate"
-        android:textSize="16sp"
-        android:textColor="#FFFFFF"
-        android:gravity="center"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="24dp"/>
 
     <!-- Campo de Username con icono -->
     <LinearLayout
@@ -51,7 +40,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Username"
+            android:hint="Nombre de usuario"
             android:padding="10dp"
             android:backgroundTint="#FFFFFF"
             android:textColorHint="#CCCCCC"
@@ -78,7 +67,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Password"
+            android:hint="Contraseña"
             android:padding="10dp"
             android:backgroundTint="#FFFFFF"
             android:textColorHint="#CCCCCC"
@@ -91,7 +80,7 @@
         android:id="@+id/btn_sign_in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign in"
+        android:text="Iniciar Sesion"
         android:backgroundTint="#7B1FA2"
         android:textColor="#FFFFFF"
         android:layout_marginBottom="16dp"/>
@@ -101,7 +90,8 @@
         android:id="@+id/btn_sign_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign up"
+        android:text="Registrate"
         android:backgroundTint="#9C27B0"
         android:textColor="#FFFFFF"/>
+
 </LinearLayout>

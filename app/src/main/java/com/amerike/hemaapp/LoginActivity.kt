@@ -1,5 +1,6 @@
 package com.amerike.hemaapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -13,9 +14,11 @@ class LoginActivity : AppCompatActivity() {
 
         val username: EditText = findViewById(R.id.username)
         val password: EditText = findViewById(R.id.password)
-        val signInButton: Button = findViewById(R.id.btn_sign_in)
-        val signUpButton: Button = findViewById(R.id.btn_sign_up)
 
+        val signUpButton = findViewById<Button>(R.id.btn_sign_up)
+        val signInButton = findViewById<Button>(R.id.btn_sign_in)
+
+        signUpButton.setOnClickListener { navigateToRegister() }
         signInButton.setOnClickListener {
             val userText = username.text.toString()
             val passText = password.text.toString()
@@ -27,5 +30,9 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Invalid Credentials", Toast.LENGTH_SHORT).show()
             }
         }
+    }
+    private fun navigateToRegister() {
+        val intent = Intent(this, RegisterActivity::class.java)
+        startActivity(intent)
     }
 }
