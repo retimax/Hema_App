@@ -1,4 +1,4 @@
-Caso A se desea saber 
+///////Caso A se desea saber su dosis x demanda*******
 fun main() {
     println("Ingresa el peso corporal en kg:")
     val pesoCorporal = readLine()?.toDoubleOrNull() ?: 0.0
@@ -28,7 +28,7 @@ fun main() {
 }
 
 
-/// profilaxis 
+/// profilaxis ///***********************************
 
 fun main() {
     println("Ingresa la edad del paciente (años):")
