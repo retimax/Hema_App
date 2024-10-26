@@ -33,7 +33,7 @@ class MenuActivity : AppCompatActivity() {
 
 
     private fun navigateToProf() {
-        val intent = Intent(this, ProfRegister::class.java)
+        val intent = Intent(this, ProfActivity::class.java)
         startActivity(intent)
     }
 }
