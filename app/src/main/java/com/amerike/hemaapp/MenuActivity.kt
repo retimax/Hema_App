@@ -12,11 +12,9 @@ class MenuActivity : AppCompatActivity() {
 
         val btnDevice = findViewById<Button>(R.id.btnDevice)
         val btnEvents = findViewById<Button>(R.id.btnEvents)
-        val btnProf = findViewById<Button>(R.id.btnRegister)
 
         btnDevice.setOnClickListener { navigateToDevice() }
         btnEvents.setOnClickListener { navigateToEvents() }
-        btnProf.setOnClickListener { navigateToProf() }
     }
 
 

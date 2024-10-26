@@ -43,23 +43,13 @@
             android:id="@+id/btnEvents"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="eventos"
+            android:text="Eventos"
             android:textColor="@android:color/white"
             android:backgroundTint="@color/blue_btn"
             android:layout_below="@id/btnDevice"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:padding="12dp" />
 
-        <!-- Botón Registro -->
-        <Button
-            android:id="@+id/btnRegister"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Registro"
-            android:textColor="@android:color/white"
-            android:backgroundTint="@color/blue_btn"
-            android:layout_below="@id/btnEvents"
-            android:padding="12dp" />
     </RelativeLayout>
 
 </RelativeLayout>
