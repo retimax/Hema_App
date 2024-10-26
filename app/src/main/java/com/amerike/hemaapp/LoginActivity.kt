@@ -26,6 +26,7 @@ class LoginActivity : AppCompatActivity() {
             // Simulación
             if (userText == "user" && passText == "1234") {
                 Toast.makeText(this, "Login Successfull", Toast.LENGTH_SHORT).show()
+                navigateToMenu()
             } else {
                 Toast.makeText(this, "Invalid Credentials", Toast.LENGTH_SHORT).show()
             }
@@ -33,6 +34,10 @@ class LoginActivity : AppCompatActivity() {
     }
     private fun navigateToRegister() {
         val intent = Intent(this, RegisterActivity::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToMenu() {
+        val intent = Intent(this, MenuActivity::class.java)
         startActivity(intent)
     }
 }

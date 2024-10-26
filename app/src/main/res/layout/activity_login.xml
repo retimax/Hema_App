@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    android:background="@drawable/bg_gradient"
+    android:background="@color/background"
     android:gravity="center">
 
     <!-- Título de la App -->
@@ -15,83 +15,92 @@
         android:text="@string/app_name"
         android:textAllCaps="true"
         android:textSize="50sp"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:layout_marginBottom="70dp"
         android:textStyle="bold"
         android:gravity="center"/>
 
-    <!-- Campo de Username con icono -->
+    <!-- Contenedor de campos y botones -->
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@drawable/bg_input"
-        android:padding="10dp"
-        android:layout_marginBottom="16dp">
+        android:orientation="vertical"
+        android:background="@drawable/rounded_background"
+        android:padding="20dp">
 
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_username"
-            android:layout_gravity="center_vertical" />
-
-        <EditText
-            android:id="@+id/username"
-            android:layout_width="0dp"
+        <!-- Campo de Username con icono -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Nombre de usuario"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_input"
             android:padding="10dp"
-            android:backgroundTint="#FFFFFF"
-            android:textColorHint="#CCCCCC"
-            android:textColor="#FFFFFF"/>
-    </LinearLayout>
+            android:layout_marginBottom="16dp">
 
-    <!-- Campo de Password con icono -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@drawable/bg_input"
-        android:padding="10dp"
-        android:layout_marginBottom="24dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_username"
+                android:layout_gravity="center_vertical" />
 
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_password"
-            android:layout_gravity="center_vertical" />
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Nombre de usuario"
+                android:padding="10dp"
+                android:backgroundTint="#FFFFFF"
+                android:textColorHint="#CCCCCC"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="0dp"
+        <!-- Campo de Password con icono -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Contraseña"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_input"
             android:padding="10dp"
-            android:backgroundTint="#FFFFFF"
-            android:textColorHint="#CCCCCC"
-            android:textColor="#FFFFFF"
-            android:inputType="textPassword"/>
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_password"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Contraseña"
+                android:padding="10dp"
+                android:backgroundTint="#FFFFFF"
+                android:textColorHint="#CCCCCC"
+                android:textColor="#FFFFFF"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+
+        <!-- Botón de Sign In -->
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesión"
+            android:backgroundTint="@color/blue_btn"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botón de Sign Up -->
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regístrate"
+            android:backgroundTint="@color/blue_btn"
+            android:textColor="@color/white"/>
     </LinearLayout>
-
-    <!-- Botón de Sign In -->
-    <Button
-        android:id="@+id/btn_sign_in"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Iniciar Sesion"
-        android:backgroundTint="#7B1FA2"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Botón de Sign Up -->
-    <Button
-        android:id="@+id/btn_sign_up"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Registrate"
-        android:backgroundTint="#9C27B0"
-        android:textColor="#FFFFFF"/>
 
 </LinearLayout>
